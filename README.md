@@ -4,6 +4,7 @@
 2. mkdir ~/sites
 3. sudo nano /etc/apache2/sites-available/site.example.conf
 #### Write down apache configs about the site like below:
+```bash
 <VirtualHost *:80>
      ServerAdmin YOUR_EMAIL_ADDRESS
      ServerName {your virtual site}
@@ -17,6 +18,7 @@
              Require all granted
      </Directory>
 </VirtualHost>
+```
 4.sudo a2ensite /etc/apache2/sites-available/site.example.conf
 5. sudo systemctl apache2 reload
 6. sudo nano /etc/hosts
